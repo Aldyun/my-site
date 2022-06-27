@@ -1,0 +1,96 @@
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu a{
+    background:#3d3d3d;
+    color: #fff;
+    padding: 9px;
+    display: block;
+    border-bottom: 1px solid #666;
+    transition: 0.5s all;
+	
+}
+.sidebar{
+    width: 200px;
+    margin: 20px;
+}
+.menu a:hover{
+    background: #666;
+    padding: 10px 0 10px 20px;
+}
+.menu li:first-child a, .menu li .v_menu li:first-child a{
+    border-radius: 3px 3px 0 0;
+}
+.menu li:last-child a, .menu li .v_menu li:last-child a{
+    border-radius: 0 0 3px 3px;
+    border-bottom: 0;
+}
+.menu li .v_menu li a{
+    border-radius: 0;
+}
+.p_menu{position: relative;}
+.v_menu{
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: -9999px;
+    opacity: 0;
+    border-left: 5px solid transparent;
+    transition: 0.5s opacity;
+}
+.p_menu:hover .v_menu{
+    opacity: 1;
+    top: 0;
+}
+.p_menu::after{
+    content: "";
+    position: absolute;
+    border:5px solid;
+    border-color: transparent transparent transparent #eee;
+    top:1em;
+    right: 0.7em;
+    transition: 0.5s;
+}
+.p_menu:hover::after{
+    transform: scaleX(-1);
+}
+
+h1 {
+    background:#3d3d3d;
+    color: #fff;
+    padding: 15px 0 15px 15px;
+    display: block;
+    border-bottom: 1px solid #666;
+    transition: 0.5s all;
+    border-radius: 25px 25px 0 0;
+    font-size: 26px;	
+}
+a{
+    background:#3d3d3d;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    transition: 0.5s all;
+	 border-radius: 3px 3px 3px 3px;
+}
+.sprava{
+float:top;
+ 
+width: justify;
+height:justify;
+}
+body {
+
+background-color: #537759;
+
+background-image: url(фон.jpg);
+
+}
+img {
+  width: 20%;
+  height: auto;
+  float: right;
+  margin: 50 50 50px 10px;
+}
